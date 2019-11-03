@@ -9,12 +9,15 @@
     <h1 id="title">freeCodeCamp Survey Form</h1><br>
     <p id="description">Thank you for taking the time to help us improve the platform </p><br>
     <form id="survey-form">
-      <label id="name-label" for="name">name</label>
-      <input type="name" id="name" name="name" required placeholder="ENTER YOUR NAME">
-      <label id="email-label" for="email">email</label>
-      <input type="email" id="email" name="email" required placeholder="ENTER YOUR EMAIL">
-      <label id="number-label" for="number">number</label>
-      <input type="number"  id="number" name="number" required min="5" max="11" placeholder="ENTER YOUR NUMBER">
+      <div class="survey-form">
+      <div class="inputs">
+        <label class="change" id="name-label" for="name">name</label><br>
+        <input class="changed" type="name" id="name" name="name" required placeholder="ENTER YOUR NAME"><br>
+        <label  class="change" id="email-label" for="email">email</label><br>
+        <input  class="changed" type="email" id="email" name="email" required placeholder="ENTER YOUR EMAIL"><br>
+        <label  class="change" id="number-label" for="number">number</label><br>
+        <input  class="changed" type="number"  id="number" name="number" required min="5" max="11" placeholder="ENTER YOUR NUMBER"><br>
+      </div>
       <p>What is your favorite feature of freeCodeCamp?</p><br>
       <select id="dropdown" name="dropdown1">
         <option value="student">Student</option>
@@ -52,10 +55,15 @@
           Data Visualization
         </label><br>
       </div>
-
-
+      <div>
+        <p>Any comments or suggestions?</p><br>
+        <textarea class="textarea" placeholder="ENTER YOUR COMMENTS"></textarea>
+      </div>
+      <div>
+        <input id="submit" type="submit" name="submit" value="submit">
+      </div>
     </form>
-
+  </div>
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
